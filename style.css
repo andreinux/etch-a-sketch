@@ -3,9 +3,6 @@
   
 }
 
-
-
-
 .square {
     width: 6.25%;
     height: 6.25%;
@@ -26,6 +23,28 @@
     flex-wrap: wrap;
     align-content: flex-start;
 }
-
+#new-btn {
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    padding:2px;
+    font-weight: bold;
+    margin-left: auto;
+    height: 35px;
+    font-family: "inter";
+    border: none;
+}
+#new-btn:hover {
+    background-color: #70d10f;
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+    border: none;
+}
+#header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
