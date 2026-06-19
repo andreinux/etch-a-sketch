@@ -1,5 +1,6 @@
 * {
       box-sizing: border-box;
+   
   
 }
 .square {
@@ -30,12 +31,12 @@
     font-weight: bold;
     margin-left: auto;
     height: 35px;
-    font-family: "inter";
+    font-family: "Inter";
     border: none;
     padding: 10px;
 }
 #new-btn:hover {
-    background-color: #70d10f;
+    background-color: #335412;
     transform: translateY(-2px);
     transition: 0.3s ease;
     border: none;
@@ -58,6 +59,7 @@
     font-family: "inter";
     border: none;
     margin: 0 auto;
+    width: 130px;
     
 }
 #main {
@@ -65,4 +67,14 @@
     width: 1300px;
     margin: 0 auto;
     border-radius: 10px;
+}
+h1 {
+    color: rgb(251, 7, 7);
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+#erase:hover {
+     background-color: rgb(56, 56, 151);
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+    border: none;
 }
