@@ -1,7 +1,7 @@
 const container = document.querySelector("#container");
 const fragment = document.createDocumentFragment();
 const newBtn = document.querySelector("#new-btn");
-
+const erase = document.querySelector("#erase");
 // default sketch page
 
 let sideNumber = 16;
@@ -13,6 +13,12 @@ for (let i=0 ; i < input; i++) {
     square.classList.add("square");
     square.style.width=`calc(100% / ${sideNumber})`
     square.style.height=`calc(100% / ${sideNumber})`
+
+    square.addEventListener("mouseover" , () => {
+        square.style.backgroundColor="red";
+    })
+
+
     fragment.append(square);
 }
 
@@ -26,9 +32,24 @@ container.append(fragment);
 
 newBtn.addEventListener("click" , () => {
     sideNumber = parseInt(prompt("Enter the desired number of squares each side to make new page"));
+
+
+    if (sideNumber >= 101) {
+        alert("The sketchpad is only limited to 100 squares per side");
+    }
+  else {
     squareNumber = sideNumber * sideNumber;
     container.textContent = "";
     createGrid(squareNumber);
     container.append(fragment);
+  }
+
 })
 
+erase.addEventListener("click" , () => {
+    container.textContent="";
+    createGrid(squareNumber);
+    container.append(fragment);
+
+
+})

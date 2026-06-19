@@ -2,11 +2,10 @@
       box-sizing: border-box;
   
 }
-
 .square {
-    border: 1px solid gray;
-
+    border: 0.5px solid gray;
 }
+
 .square:hover {
     background-color: red;
 }
@@ -15,12 +14,13 @@
 #container {
     width: 960px;
     height: 960px;
-    border: 3px solid blue;
+    border: 30px solid blue;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     margin: 0 auto;
+    border-radius: 5px;
 }
 #new-btn {
     color: white;
@@ -32,6 +32,7 @@
     height: 35px;
     font-family: "inter";
     border: none;
+    padding: 10px;
 }
 #new-btn:hover {
     background-color: #70d10f;
@@ -45,5 +46,23 @@
     justify-content: space-between;
     align-items: center;
 }
-
-
+#erase {
+    
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding:2px;
+    font-weight: bold;
+    margin-left: auto;
+    height: 35px;
+    font-family: "inter";
+    border: none;
+    margin: 0 auto;
+    
+}
+#main {
+    border: 50px solid gray;
+    width: 1300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
